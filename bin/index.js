@@ -17,7 +17,7 @@ function stats (url, parallel, seconds) {
 }
 
 arg.alone(res => {
-  if (!sb.empty(sb.get(res, '0')) && sb.isString(sb.get(res, '0')) && sb.get(res, '0') !== '-h' ) {
+  if (!sb.empty(sb.get(res, '0')) && sb.isString(sb.get(res, '0')) && sb.get(res, '0') !== '-h' && !req.check(sb.get(res, '0'))) {
     if (!sb.empty(sb.get(res, '1')) && sb.get(res, '1') === '-c') {
       if (sb.isInteger(parseInt(sb.get(res, '2')))) {
         stats(sb.get(res, '0'), sb.get(res, '2'), stats_timeout)
@@ -28,17 +28,24 @@ arg.alone(res => {
           })
         })
       } else {
-        console.log(`-c needs a CADENCY parallel requests\n`)
+        console.log(`
+        WARNING: '-c' needs a integer!\n`)
         help(default_cad, stats_timeout)
       }
     } else {
-      stats(sb.get(res, '0'), default_cad, stats_timeout)
-      deal(default_cad, (done) => {
-        req.get(sb.get(res, '0'), () => {
-          i++
-          done()
+      if (!req.check(sb.get(res, '0'))) {
+        console.log(`
+        WARNING: Use a valid 'URL'!\n`)
+        help(default_cad, stats_timeout)
+      } else {
+        stats(sb.get(res, '0'), default_cad, stats_timeout)
+        deal(default_cad, (done) => {
+          req.get(sb.get(res, '0'), () => {
+            i++
+            done()
+          })
         })
-      })
+      }
     }
   } else help(default_cad, stats_timeout)
 })
