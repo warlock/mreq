@@ -36,7 +36,6 @@ arg.alone(res => {
       deal(default_cad, (done) => {
         req.get(sb.get(res, '0'), () => {
           i++
-          console.log(i)
           done()
         })
       })
