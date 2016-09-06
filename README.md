@@ -1,6 +1,11 @@
-MREQ
+mreq
 ===
 > Massive Request tester for Node.js
+
+## NPM Package:
+```sh
+https://www.npmjs.com/package/mreq
+```
 
 ## Install:
 ```sh
