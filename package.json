@@ -1,0 +1,34 @@
+{
+  "name": "mreq",
+  "version": "0.0.2",
+  "description": "Massive Request for Node.js",
+  "main": "./bin/index.js",
+  "bin": {
+    "mreq": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warlock/mreq.git"
+  },
+  "keywords": [
+    "request",
+    "massive",
+    "test",
+    "load",
+    "server",
+    "rampup",
+    "ddos",
+    "swarm"
+  ],
+  "author": "Josep Subils Rigau <josep@spellbook.io> (http://spellbook.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/warlock/mreq/issues"
+  },
+  "homepage": "http://www.spellbook.io",
+  "dependencies": {
+    "argcon": "0.0.4",
+    "request": "^2.74.0",
+    "spellbook": "0.0.88"
+  }
+}
