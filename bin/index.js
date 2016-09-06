@@ -17,7 +17,7 @@ function stats (url, parallel, seconds) {
 }
 
 arg.alone(res => {
-  if (!sb.empty(sb.get(res, '0')) && sb.isString(sb.get(res, '0')) && sb.get(res, '0') !== '-h' && !req.check(sb.get(res, '0'))) {
+  if (!sb.empty(sb.get(res, '0')) && sb.isString(sb.get(res, '0')) && sb.get(res, '0') !== '-h' && req.check(sb.get(res, '0'))) {
     if (!sb.empty(sb.get(res, '1')) && sb.get(res, '1') === '-c') {
       if (sb.isInteger(parseInt(sb.get(res, '2')))) {
         stats(sb.get(res, '0'), sb.get(res, '2'), stats_timeout)
