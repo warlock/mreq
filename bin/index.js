@@ -7,7 +7,7 @@ const deal = require('../lib/dealer.js')
 var i = 0
 var stats_timeout = 3
 var default_cad = 10000
-function stats (url, parallel, seconds) {
+const stats = (url, parallel, seconds) => {
   console.log(`URL: ${url}`)
   console.log(`PARALLEL CADENCY: ${parallel}`)
   console.log(`STATS TIMEOUT SECONDS: ${seconds}`)
