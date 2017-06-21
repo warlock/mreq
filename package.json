@@ -28,7 +28,7 @@
   "homepage": "http://www.spellbook.io",
   "dependencies": {
     "argcon": "0.0.4",
-    "request": "^2.74.0",
-    "spellbook": "0.0.88"
+    "request": "^2.81.0",
+    "spellbook": "0.1.22"
   }
 }
