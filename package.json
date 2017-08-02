@@ -1,6 +1,6 @@
 {
   "name": "mreq",
-  "version": "0.0.11",
+  "version": "1.0.0",
   "description": "Massive Request tester for Node.js",
   "main": "./bin/index.js",
   "bin": {
@@ -20,15 +20,15 @@
     "ddos",
     "swarm"
   ],
-  "author": "Josep Subils Rigau <josep@spellbook.io> (http://spellbook.io)",
+  "author": "Josep Subils <js@js.gl> (http://js.gl)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/warlock/mreq/issues"
   },
-  "homepage": "http://www.spellbook.io",
+  "homepage": "http://js.gl",
   "dependencies": {
     "argcon": "0.0.4",
     "request": "^2.81.0",
-    "spellbook": "0.1.22"
+    "spellbook": "^1.0.2"
   }
 }
