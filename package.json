@@ -1,6 +1,6 @@
 {
   "name": "mreq",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Massive Request tester for Node.js",
   "main": "./bin/index.js",
   "bin": {
@@ -27,8 +27,8 @@
   },
   "homepage": "http://js.gl",
   "dependencies": {
-    "argcon": "0.0.4",
-    "request": "^2.81.0",
-    "spellbook": "^1.0.2"
+    "argcon": "^2.0.1",
+    "snc": "^1.2.5",
+    "tck": "^1.1.0"
   }
 }
