@@ -22,6 +22,14 @@ yarn global add mreq
 npx mreq
 ```
 
+## Usage:
+```text
+      mreq [URL] [-c [CADENCY]] [-t [STATS_TIMEOUT]]
+
+    -c   Cadency setter. (Optional value. Default set in 10000.)
+    -t   Stats timeout setter. (Optional value. Default set in 3 seconds.)
+```
+
 ## Use with default cadency(10000 request in parallel):
 ```sh
 mreq http://localhost
@@ -32,10 +40,11 @@ mreq http://localhost
 mreq http://localhost -c 10
 ```
 
-## Use '-h' for help
+## Set timeut stats ouput:
 ```sh
-mreq -h
+mreq http://localhost -t 10
 ```
+
 
 ## License
 All the code here is under MIT license. Which means you could do virtually anything with the code.
