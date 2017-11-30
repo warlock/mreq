@@ -1,6 +1,6 @@
 {
   "name": "mreq",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Massive Request tester for Node.js",
   "main": "./bin/index.js",
   "bin": {
