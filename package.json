@@ -28,7 +28,8 @@
   "homepage": "http://js.gl",
   "dependencies": {
     "argcon": "^2.0.1",
-    "snc": "^1.2.5",
-    "tck": "^1.1.0"
+    "got": "^11.8.0",
+    "snc": "^1.2.8",
+    "tck": "^1.2.0"
   }
 }
